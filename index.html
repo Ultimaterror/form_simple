@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form id="myForm" action="#">
+        <!-- <label for="name">What is your name ?</label>
+        <input type="text" name="name" id="name"> -->
+
+        <div>
+            <p>Which city is the capital of England ?</p>
+            <input type="radio" id="cardiff" name="englandCapital" value="cardiff">
+            <label for="cardiff">Cardiff</label><br>
+            <input type="radio" id="manchester" name="englandCapital" value="manchester">
+            <label for="manchester">Manchester</label><br>
+            <input type="radio" id="london" name="englandCapital" value="london">
+            <label for="london">London</label>
+        </div>
+
+        <div>
+            <p>Which cities are in France ?</p>
+
+            <input type="checkbox" name="franceCities[]" id="city1">
+            <label for="city1">Paris</label>
+            <br>
+
+            <input type="checkbox" name="franceCities[]" id="city2">
+            <label for="city2">Berlin</label>
+            <br>
+
+            <input type="checkbox" name="franceCities[]" id="city3">
+            <label for="city3">Dublin</label>
+            <br>
+
+            <input type="checkbox" name="franceCities[]" id="city4">
+            <label for="city4">Lyon</label>
+            <br>
+        </div>
+
+    </form>
+
+    <br>
+    <button onclick="verify()">Submit</button>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
